@@ -11,8 +11,6 @@ gem "stimulus-rails"
 gem "jbuilder"
 gem 'mini_racer', platforms: :ruby
 gem "redis", ">= 4.0.1"
-# gem "kredis"
-# gem "bcrypt", "~> 3.1.7"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
 gem "image_processing", "~> 1.13"
@@ -37,8 +35,6 @@ group :development do
   gem 'solargraph-rails'
   gem 'ruby-lsp'
   gem 'ruby-lsp-rails'
-  # gem "rack-mini-profiler"
-  # gem "spring"
 end
 
 group :test do
@@ -51,17 +47,10 @@ gem 'sentry-ruby'
 gem 'sentry-rails'
 gem 'sentry-sidekiq'
 
-# Spree gems
-spree_opts = '~> 5.1'
-gem "spree", spree_opts
-gem "spree_emails", spree_opts
-gem "spree_sample", spree_opts
-gem "spree_admin", spree_opts
-gem "spree_storefront", spree_opts
+# Spree Gems (Pinned versions to avoid issues)
+gem "spree", "5.1.0"
+gem "spree_emails", "5.1.0"
+gem "spree_sample", "5.1.0"
+gem "spree_admin", "5.1.0"
+gem "spree_storefront", "5.1.0"
 gem "spree_i18n"
-
-# Optional integrations (commented out)
-# gem "spree_stripe"
-# gem "spree_google_analytics", "~> 1.0"
-# gem "spree_klaviyo", "~> 1.0"
-# gem "spree_paypal_checkout", "~> 0.5"
