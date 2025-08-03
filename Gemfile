@@ -83,7 +83,6 @@ group :development do
 end
 
 group :test do
-  gem 'spree_dev_tools'
   gem 'rails-controller-testing'
 end
 
